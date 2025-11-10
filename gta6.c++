@@ -23,9 +23,9 @@ int solve(string E, int Y, int M, int D) {
     }
     
     if (before) {
-        cout << "we got " << E << " before gta6";
+        cout << "we got " << E << " before gta6\n";
     } else {
-        cout << "we got gta6 before " << E;
+        cout << "we got gta6 before " << E << "\n";
     }
     return 0;
 }
