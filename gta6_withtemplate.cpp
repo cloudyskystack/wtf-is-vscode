@@ -1,8 +1,14 @@
 #include <iostream>
-#include <string>
+
 using namespace std;
 
-int solve(string E, int Y, int M, int D) {
+/**
+ * E: Name of event
+ * Y: Year of event
+ * M: Month of event
+ * D: Day of event
+ */
+ string solve(string E, int Y, int M, int D) {
     bool before;
     if (Y == 2026) {
         if (M == 11) {
@@ -27,18 +33,19 @@ int solve(string E, int Y, int M, int D) {
     } else {
         cout << "we got gta6 before " << E << "\n";
     }
-    return 0;
+    return "";
 }
 
 int main() {
     int T;
     cin >> T;
+    cin.ignore();
     for (int i = 0; i < T; i++) {
         string E;
-        int Y, M, D;
         getline(cin, E);
+        int D, M, Y;
         cin >> Y >> M >> D;
         cin.ignore();
-        solve(E, Y, M, D);
+        cout << solve(E, Y, M, D) << '\n';
     }
 }
