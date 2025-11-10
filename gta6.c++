@@ -36,7 +36,7 @@ int main() {
     for (int i = 0; i < T; i++) {
         string E;
         int Y, M, D;
-        getline(cin, E);
+        cin >> E; //HOW TO READ WHITESPACE?????
         cin >> Y >> M >> D;
         solve(E, Y, M, D);
     }
