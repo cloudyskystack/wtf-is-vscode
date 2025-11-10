@@ -36,7 +36,7 @@ int main() {
     for (int i = 0; i < T; i++) {
         string E;
         int Y, M, D;
-        getline(cin, E);
+        while (E.empty()) getline(cin, E);
         cin >> Y >> M >> D;
         cin.ignore();
         solve(E, Y, M, D);
