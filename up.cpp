@@ -12,8 +12,21 @@ using namespace std;
  *  G: an N by M grid representing the front-view and depths of the character
  */
 int solve(int N, int M, vector<string> G) {
-    // YOUR CODE HERE
-    return -1;
+    int wahoo = 0;
+    for (int column = 0; column < M; column++) {
+        int max_depth = 0;
+        for (string row : G) {
+            int hello = 0;
+            if (row[column] != '.') {
+                hello = row[column] - '0';
+            }
+            if (hello > max_depth) {
+                max_depth = hello;
+            }
+        }
+        wahoo += max_depth;
+    }
+    return wahoo;
 }
 
 int main() {
