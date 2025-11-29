@@ -1,0 +1,2 @@
+format for SIL involved submitting the correct output per testcase
+this folder serves as an archive for the problems and solutions I coded during the competition
